@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+* { 
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100%;
+	background: rgb(211, 209, 209);
+	color: rgb(0, 0, 0);
+	
+}
+h1{
+	font-family: 'Playfair Display', serif;
+	font-size: 46px;
+}
+	/* sets the body height of the browser, so that backgrounds and div heights work correctly. Color and background will almost certainly be altered; they are just placeholders */
+	
+body {
+	display: flex;
+	margin:auto;
+	align-items: center;
+	flex-direction: column;
+	max-width: 80%;
+	font-size: 1.4rem;
+	text-rendering: optimizeLegibility;
+}
+textarea {
+	margin: 0;
+	border: 2px solid #74637f;
+	border-radius: 0;
+	height: 10rem;
+	width: 40%;
+	color: #444;
+	overflow: auto;
+  }
+  input[type="submit"] {
+    border: 1px solid #0A3D5B;
+    background-color: transparent;
+	margin-top: 1rem;
+    color: #0A3D5B;
+	height: 2rem;
+	width: 4rem;
+    font-size: 14px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px;
+    text-transform: capitalize;
+}
+
+input:focus {
+    outline: none;
+}
+input.hover-center-1 {
+    background-image: linear-gradient(0, #0A3D5B, #0A3D5B);
+    background-size: 0;
+    transition: .8s;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+input.hover-center-1:hover {
+    background-size: 100%;
+    color: #fff;
+}
+
+
+.accordion > input[type="checkbox"] {
+	position: absolute;
+	left: -100vw;
+  }
+  
+  .accordion .content {
+	overflow-y: hidden;
+	height: 0;
+	transition: height 0.3s ease;
+  }
+  
+  .accordion > input[type="checkbox"]:checked ~ .content {
+	height: auto;
+	overflow: visible;
+  }
+  
+  .accordion label {
+	display: block;
+  }
+  
+  /*
+   Styling
+  */
+  body {
+	font: 16px/1.5em "Overpass", "Open Sans", Helvetica, sans-serif;
+	color: #333;
+	font-weight: 300;
+  }
+  
+  .accordion {
+	margin-bottom: 1em;
+  }
+  
+  .accordion > input[type="checkbox"]:checked ~ .content {
+	padding: 15px;
+	border: 1px solid #e8e8e8;
+	border-top: 0;
+  }
+  
+  .accordion .handle {
+	margin: 0;
+	font-size: 1.125em;
+	line-height: 1.2em;
+  }
+  
+  .accordion label {
+	color: #333;
+	cursor: pointer;
+	font-weight: normal;
+	padding: 15px;
+	background: #e8e8e8;
+  }
+  
+  .accordion label:hover,
+  .accordion label:focus {
+	background: #d8d8d8;
+  }
+  
+  .accordion .handle label:before {
+	font-family: 'fontawesome';
+	content: "\f054";
+	display: inline-block;
+	margin-right: 10px;
+	font-size: .58em;
+	line-height: 1.556em;
+	vertical-align: middle;
+  }
+  
+  .accordion > input[type="checkbox"]:checked ~ .handle label:before {
+	content: "\f078";
+  }
+  
+  
+  /*
+   Demo purposes only
+  */
+  *,
+  *:before,
+  *:after {
+	box-sizing: border-box;
+  }
+  
+  body {
+	padding: 40px;
+  }
+  
+ 
+  
+  .accordion {
+	  margin-top: 1rem;
+	max-width: 65em;
+  }
+  
+  .accordion p:last-child {
+	margin-bottom: 0;
+  }
