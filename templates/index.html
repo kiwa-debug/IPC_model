@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    
+    <title>Model Deployment</title>
+</head>
+<body>
+    <h1>IPC Retrival System</h1>
+    <textarea name="usercase" form="usrform" placeholder="Enter your case here...."></textarea>
+    <form id = "usrform" method="POST" action="/" >
+        <input class="hover-center-1" type="submit" value="Submit">
+    </form>
+    <section class="accordion">
+  <input type="checkbox" name="collapse" id="handle1" checked="checked">
+  <h2 class="handle">
+    <label for="handle1">IPC:{{pred_detail}}</label>
+  </h2>
+  <div class="content">
+    <p><strong>Punishment:</strong> {{pred_punish}}</p>
+     </div>
+</section>
+
+  
+
+
+
+</body>
+</html>
